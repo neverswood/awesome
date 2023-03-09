@@ -1,0 +1,17 @@
+:host {
+  background-color: blue;
+}
+
+mat-card {
+  margin-bottom: 20px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-content {
+  margin-top: 10px;
+  word-spacing: 1px;
+}
