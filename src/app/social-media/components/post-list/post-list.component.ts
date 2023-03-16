@@ -18,4 +18,8 @@ export class PostListComponent implements OnInit {
   ngOnInit(): void {
     this.posts$ = this.route.getPosts();
   }
+
+  onPostCommented(postCommented: { comment: string; postId: number }) {
+    this.route.addNewComment(postCommented);
+  }
 }

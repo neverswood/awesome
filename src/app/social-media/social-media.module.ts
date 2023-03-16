@@ -7,6 +7,8 @@ import { PostListComponent } from './components/post-list/post-list.component';
 import { PostListItemComponent } from './components/post-list-item/post-list-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { CommentsComponent } from '../shared/components/comments/comments.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [PostListComponent, PostListItemComponent],
@@ -15,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
     SocialMediaRoutingModule,
     HttpClientModule,
     MatCardModule,
+    SharedModule,
   ],
   providers: [PostsService],
   exports: [PostListComponent, PostListItemComponent],
